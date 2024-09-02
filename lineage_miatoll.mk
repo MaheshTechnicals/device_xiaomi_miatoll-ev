@@ -20,10 +20,12 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Lineage
+# Everest
 TARGET_FACE_UNLOCK_SUPPORTED := true
+EVEREST_MAINTAINER := MaheshTechnicals
+TARGET_SUPPORTS_BLUR := true
 WITH_GAPPS := true
--include vendor/lineage-priv/keys/keys.mk
+
 
 PRODUCT_NAME := lineage_miatoll
 PRODUCT_DEVICE := miatoll
