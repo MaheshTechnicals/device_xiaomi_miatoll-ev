@@ -18,6 +18,6 @@ git clone https://github.com/LineageOS/android_hardware_sony_timekeep.git hardwa
 
 # Clone the vendor/xiaomi/miuicamera repository
 echo "Cloning vendor/xiaomi/miuicamera..."
-git clone https://github.com/MaheshTechnicals/vendor_lineage-priv.git vendor/xiaomi/miuicamera --depth=1
+git clone https://github.com/clarencelol/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera --depth=1
 
 echo "All repositories have been successfully cloned!"
