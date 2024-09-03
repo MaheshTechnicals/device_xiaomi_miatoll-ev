@@ -2,7 +2,7 @@
 
 # Clone the Kernel Tree
 echo "Cloning Kernel Tree..."
-git clone https://github.com/clarencekopitiam/kernel_xiaomi_sm6250.git kernel/xiaomi/sm6250 --depth=1
+git clone https://github.com/SwapnilVicky/namaste_xiaomi_miatoll.git -b ksu kernel/xiaomi/sm6250 --depth=1
 
 # Clone the Vendor Tree
 echo "Cloning Vendor Tree..."
