@@ -20,9 +20,33 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Lineage
+#  AlphaDroid Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := true
+ALPHA_MAINTAINER := MaheshTechnicals
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BUILD_PACKAGE := 3
+
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+
+# TARGET_LAUNCHER options:
+# 1 - stock (default)
+# 2 - lawnchair
+# 3 - pixel (valid only on gapps builds)
+TARGET_LAUNCHER := 1
+
+# GAPPS (valid only for GAPPS builds)
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_MATLOG := true
+
+#sign-builds
 -include vendor/lineage-priv/keys/keys.mk
 
 PRODUCT_NAME := lineage_miatoll
