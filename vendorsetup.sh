@@ -16,18 +16,18 @@ else
   echo "Vendor Tree already exists, skipping..."
 fi
 
-# Clone the hardware/xiaomi repository
+# Clone the hardware/xiaomi repository (using branch lineage-21)
 if [ ! -d "hardware/xiaomi" ]; then
-  echo "Cloning hardware/xiaomi..."
-  git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi --depth=1
+  echo "Cloning hardware/xiaomi (branch lineage-21)..."
+  git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi --depth=1
 else
   echo "hardware/xiaomi already exists, skipping..."
 fi
 
-# Clone the hardware/sony/timekeep repository
+# Clone the hardware/sony/timekeep repository (using branch lineage-21)
 if [ ! -d "hardware/sony/timekeep" ]; then
-  echo "Cloning hardware/sony/timekeep..."
-  git clone https://github.com/LineageOS/android_hardware_sony_timekeep.git hardware/sony/timekeep --depth=1
+  echo "Cloning hardware/sony/timekeep (branch lineage-21)..."
+  git clone -b lineage-21 https://github.com/LineageOS/android_hardware_sony_timekeep.git hardware/sony/timekeep --depth=1
 else
   echo "hardware/sony/timekeep already exists, skipping..."
 fi
@@ -38,6 +38,14 @@ if [ ! -d "vendor/xiaomi/miuicamera" ]; then
   git clone https://github.com/clarencelol/vendor_xiaomi_miuicamera.git vendor/xiaomi/miuicamera --depth=1
 else
   echo "vendor/xiaomi/miuicamera already exists, skipping..."
+fi
+
+# Clone the vendor/lineage-priv/keys repository (branch alpha)
+if [ ! -d "vendor/lineage-priv/keys" ]; then
+  echo "Cloning vendor/lineage-priv/keys (branch alpha)..."
+  git clone -b alpha https://github.com/MaheshTechnicals/vendor_lineage-priv.git vendor/lineage-priv/keys --depth=1
+else
+  echo "vendor/lineage-priv/keys already exists, skipping..."
 fi
 
 echo "All repositories have been successfully cloned!"
