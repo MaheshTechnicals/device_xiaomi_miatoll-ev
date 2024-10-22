@@ -3,7 +3,7 @@
 # Clone the Kernel Tree (using branch 15)
 if [ ! -d "kernel/xiaomi/sm6250" ]; then
   echo "Cloning Kernel Tree (branch 15)..."
-  git clone -b 15 https://github.com/clarencekopitiam/kernel_xiaomi_sm6250.git kernel/xiaomi/sm6250 --depth=1
+  git clone -b 15-kinesis https://github.com/clarencekopitiam/kernel_xiaomi_sm6250.git kernel/xiaomi/sm6250 --depth=1
 else
   echo "Kernel Tree already exists, skipping..."
 fi
