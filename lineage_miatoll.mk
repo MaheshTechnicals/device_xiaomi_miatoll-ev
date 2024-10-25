@@ -20,23 +20,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-#  AlphaDroid Flags
-TARGET_FACE_UNLOCK_SUPPORTED := true
-ALPHA_MAINTAINER := MaheshTechnicals
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_BUILD_PACKAGE := 1
+#  Evo Flags
+#WITH_GMS := false
+TARGET_BUILD_APERTURE_CAMERA := false
 
-# TARGET_BUILD_PACKAGE options:
-# 1 - vanilla (default)
-# 2 - microg
-# 3 - gapps
-
-# TARGET_LAUNCHER options:
-# 1 - stock (default)
-# 2 - lawnchair
-# 3 - pixel (valid only on gapps builds)
-TARGET_LAUNCHER := 1
 
 #sign-builds
 -include vendor/lineage-priv/keys/keys.mk
