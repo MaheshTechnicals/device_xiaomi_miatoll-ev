@@ -22,7 +22,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 #  Orion Flags
 ORION_MAINTAINER := MaheshTechnicals
-ORION_MAINTAINER_LINK := https://t.me/MaheshTechnicals
+ORION_MAINTAINER_LINK := "https://t.me/MaheshTechnicals"
 ORION_BUILD_TYPE := UNOFFICIAL
 ORION_GAPPS := true
 TARGET_ENABLE_BLUR := true
