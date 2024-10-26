@@ -35,7 +35,7 @@ BUILD_GOOGLE_MESSAGE := false
 #sign-builds
 -include vendor/lineage-priv/keys/keys.mk
 
-PRODUCT_NAME := lineage_miatoll
+PRODUCT_NAME := orion_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
